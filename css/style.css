@@ -71,11 +71,11 @@ h4 {font-size: 2.8rem;}
 /* The modernizr.js script will add the 'webp' class to the HTML element; therefore, we can check whether the browser supports WebP images or not and apply the code accordingly.*/ 
 /* This is necessary because the image is added via CSS instead of HTML, so we do not have access to the picture element to choose the most optimized image format. 
  */.webp .header {
-    background-image: url(../img/banner.webp);
+    background-image: url(../img/banner.webp); 
 }
 
-.no.webp .header {
-    background-image: url(../img/banner.jpg);
+.no-webp .header {
+    background-image: url(../img/banner.jpg); /* This is necessary, .webp .header {} will not apply because of CSS's priority to the most specific selector. */
 }
 
 .header {
