@@ -20,7 +20,7 @@
         <link rel="Preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&display=swap" crossorigin="crossorigin" as="Font">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&display=swap" rel="stylesheet">
         <!-- Preload first image -->
-        <link rel="Preload" href="img/blog1.jpg" as="image">
+        <!-- <link rel="Preload" href="img/blog1.jpg" as="image"> --><!-- Do not use if there is support for webp images -->
         <title>Cofee Blog</title>
     </head>
     <body class="no_margin"> <!-- The gap the header had in all directions must be removed from the parent element -->
@@ -48,9 +48,12 @@
                 <h3>Our Blog</h3>
                 <article class="entry">
                     <div class="entry__img">
-                        <img loading="lazy" src="img/blog1.jpg" alt="blog img1"> 
-                        <!-- Lazy loading ensures that images are downloaded when the user requests to view them, 
+                        <picture>
+                            <source loading="lazy" srcset="img/blog1.webp" type="image/webp"><!-- Only load the .jpg file if the browser does not support the lighter webp format -->
+                            <img loading="lazy" src="img/blog1.jpg" alt="blog img1"> 
+                            <!-- Lazy loading ensures that images are downloaded when the user requests to view them, 
                             instead of all at once. This improves network performance. -->
+                        </picture>
                     </div>
                     <div class="entry__content">
                         <h4 class="no_margin">Coffe Grain Types</h4>
@@ -66,7 +69,10 @@
                 </article>
                 <article class="entry">
                     <div class="entry__img">
-                        <img loading="lazy" src="img/blog2.jpg" alt="blog img1">
+                        <picture>
+                            <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                            <img loading="lazy" src="img/blog2.jpg" alt="blog img2">
+                        </picture>
                     </div>
                     <div class="entry__content">
                         <h4 class="no_margin">Three Delicious Coffee Recipies</h4>
@@ -82,7 +88,10 @@
                 </article>
                 <article class="entry">
                     <div class="entry__img">
-                        <img loading="lazy" src="img/blog3.jpg" alt="blog img1">
+                        <picture>
+                            <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                            <img loading="lazy" src="img/blog3.jpg" alt="blog img3">
+                        </picture>
                     </div>
                     <div class="entry__content">
                         <h4 class="no_margin">Benefits of Coffee</h4>
