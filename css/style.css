@@ -173,6 +173,8 @@ h4 {font-size: 2.8rem;}
     background-color: var(--primary);
 }
 
+
+/* ----- Courses -----*/
 .courses {
     list-style: none;
 }
@@ -221,4 +223,39 @@ h4 {font-size: 2.8rem;}
     .about_us__img, .about_us__text {
         flex-basis: calc(50% - 1rem);
     } */
+}
+
+
+/* ----- Course ----- */
+.course {
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--gray);
+}
+
+.course:last-of-type {
+    border-bottom:none;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .course {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+    }
+}
+
+
+/* This code could be avoididng by adding the relevant classes to the courses section. Instead it is repeated for clarity purposes */
+.course__label, .course__info {
+    font-family: var(--headingFont);
+    font-size: 2rem;
+}
+
+.course__label {
+    font-weight: bold;
+}
+
+.course__info {
+    font-weight: normal;
 }
