@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&display=swap" rel="stylesheet">
+        <title>Cofee Blog</title>
+    </head>
+    <body class="no_margin"> <!-- The gap the header had in all directions must be removed from the parent element -->
+        <header class="header">
+            <div class="container">
+                <div class="main_bar">
+                    <a class="logo" href="index.html">
+                        <h1 class="logo__name no_margin center_text">Coffee<span class="logo__bold">Blog</span></h1>
+                    </a>
+                    <nav class="main_nav">
+                        <a class="nav_link" href="aboutUs.html">About Us</a>
+                        <a class="nav_link" href="courses.html">Courses</a>
+                        <a class="nav_link" href="contactUs.html">Contact Us</a>
+                    </nav>
+                </div>
+            </div>
+            
+            <div class="header__text">
+                <h2 class="no_margin">Coffee Blog - Advise and Courses</h2>
+                <p class="no_margin">Learn the best recipies and tricks</p>
+            </div>
+        </header>
+        <main class="container">
+            <h3 class="center_text">Contact Us</h3>
+            <div class="contact-bg"></div>
+            <form class="myForm">
+                <div class="field">
+                    <label class="field__label" for="form_name">Name</label><!-- The for="" allows tha form_name input to be filled when the user clicks on the "Name" label -->
+                    <input class="field__input" type="text" placeholder="Your name" id="form_name">
+                </div>
+                <div class="field">
+                    <label class="field__label" for="form_email">E-mail Address</label><!-- The for="" allows tha form_name input to be filled when the user clicks on the "Name" label -->
+                    <input class="field__input" type="email" placeholder="Your e-mail address" id="form_email">
+                </div>
+                <div class="field">
+                    <label class="field__label" for="form_msg">Message</label><!-- The for="" allows tha form_name input to be filled when the user clicks on the "Name" label -->
+                    <textarea class="field__input field__input--textArea" name="" id="form_msg" cols="30" rows="10" placeholder="Your message"></textarea>
+                </div>
+                <div class="field">
+                    <input type="submit" value="Submit" class="button button--primary field__input--button">
+                </div>
+            </form>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="main_bar">
+                    <a class="logo">
+                        <h1 class="logo__name no_margin center_text">Coffee<span class="logo__bold">Blog</span></h1>
+                    </a>
+                    <nav class="main_nav">
+                        <a class="nav_link" href="aboutUs.html">About Us</a>
+                        <a class="nav_link" href="courses.html">Courses</a>
+                        <a class="nav_link" href="contatctUs.html">Contact Us</a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

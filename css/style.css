@@ -7,6 +7,7 @@
     --white: #ffffff;
     --black: #000000;
     --gray: #e1e1e1;
+    --transparentWhite: rgba(255,255,255,85%);
 }
 
 html{
@@ -156,6 +157,11 @@ h4 {font-size: 2.8rem;}
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
+}
+
+.button:hover {
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -258,4 +264,54 @@ h4 {font-size: 2.8rem;}
 
 .course__info {
     font-weight: normal;
+}
+
+
+/* ----- Contact Us ----- */
+.contact-bg {
+    background-image: url(../img/contact.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.myForm {
+    background-color: var(--transparentWhite);
+    margin: -25rem auto 0 auto; /* Overlap form with img => negative margin */
+    width: 95%;
+    padding: 2rem;
+    font-family: var(--paragraphFont);
+}
+
+@media (min-width: 768px) {
+    .myForm {
+        padding: 5rem;
+    }
+}
+
+.field {
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.field__label {
+    flex: 0 0 6rem; /* Fixed size: 9rem */
+    text-align: right;
+}
+
+@media (min-width: 768px) {
+    .field__label {
+        flex: 0 0 12rem; /* Fixed size: 12rem */
+    }
+}
+
+.field__input {
+    flex: 1;
+    border: 1px solid var(--gray);
+    width: 100%;
+}
+
+.field__input--textArea {
+    height: 20rem;
 }
