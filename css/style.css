@@ -205,3 +205,20 @@ h4 {font-size: 2.8rem;}
     padding-bottom: 3rem;
     margin-top: 4rem;
 }
+
+@media (min-width: 768px) {
+    .about_us {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+    }
+
+    /* Flexbox Equivalent */
+    /* .about_us {
+        display: flex;
+        justify-content: space-between;
+    }
+    .about_us__img, .about_us__text {
+        flex-basis: calc(50% - 1rem);
+    } */
+}
